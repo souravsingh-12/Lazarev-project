@@ -27,9 +27,9 @@ body {
     z-index: 10;
     /* background-color: #bf6f6f; */
 }
-#elem1 h2{
-   font-size: 1.6vw;
-   font-weight: 900;
+#elem1 h2 {
+    font-size: 1.6vw;
+    font-weight: 900;
 }
 #navbar h4 {
     font-size: 0.9vw;
@@ -52,9 +52,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2vw; 
+    gap: 1.2vw;
 }
-#navbar button i{
+#navbar button i {
     background-color: #0da34e;
 }
 /* Navabr ends */
@@ -83,170 +83,252 @@ body {
     background-color: #0da34e;
     border-radius: 50%;
 }
-#page1 p{
-   text-align: center;
-   margin-top: 2vw;
-   color: rgb(191, 189, 189);
+#page1 p {
+    text-align: center;
+    margin-top: 2vw;
+    color: rgb(191, 189, 189);
 }
-#page1-pdesign{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 0.4vw;
-   color: rgb(191, 189, 189);
+#page1-pdesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.4vw;
+    color: rgb(191, 189, 189);
 }
-#page1-pdesign h4{
-   font-weight: 400;
-   border: 1px solid rgb(129, 126, 126);
-   padding: 0.3vw 1vw;
-   border-radius: 5vw;
+#page1-pdesign h4 {
+    font-weight: 400;
+    border: 1px solid rgb(129, 126, 126);
+    padding: 0.3vw 1vw;
+    border-radius: 5vw;
 }
-#page1-pdesign span{
-   padding: 0 4px;
+#page1-pdesign span {
+    padding: 0 4px;
 }
-#marque{
-   position: absolute;
-   bottom: -2%;
-   white-space: nowrap;
-   padding: 1.5vw;
-   width: 40%;
-   display: flex;
-   overflow-x: hidden;
+#marque {
+    position: absolute;
+    bottom: -2%;
+    white-space: nowrap;
+    padding: 1.5vw;
+    width: 40%;
+    display: flex;
+    overflow-x: hidden;
 }
-#marque .move{
-   /* background-color: red; */
-   display: inline-block;
-   align-items: center;
-   justify-content: center;
-   gap: 3vw;
-   animation: move;
-   animation-duration: 9s;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
+#marque .move {
+    /* background-color: red; */
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    animation: move;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-.move img{
-   height: 1.1vw;
-   margin: 0 1.2vw;
+.move img {
+    height: 1.1vw;
+    margin: 0 1.2vw;
 }
 
 @keyframes move {
-   0%{
-      transform: translate(0%);
-   }
-   100%{
-      transform: translate(-100%);
-   }
+    0% {
+        transform: translate(0%);
+    }
+    100% {
+        transform: translate(-100%);
+    }
 }
-#blur-left{
-   height: 100%;
-   width: 20%;
-   top: 0;
-   left: 0;
-   position: absolute;
-   z-index: 1;
-   background:linear-gradient(to right, #111, transparent);
+#blur-left {
+    height: 100%;
+    width: 20%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, #111, transparent);
 }
-#blur-right{
-   height: 100%;
-   width: 20%;
-   top: 0;
-   right: 0;
-   position: absolute;
-   z-index: 2;
-   background:linear-gradient(to right,transparent, #111);
+#blur-right {
+    height: 100%;
+    width: 20%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to right, transparent, #111);
 }
 
 /* Page1 ends */
 
 /* Page2 starts */
-#page2{
+#page2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vw;
+    padding-bottom: 8vw;
+    border-top: 1px solid #333;
+    /* background-color: red; */
+    position: relative;
+}
+#page2-left {
+    height: 100%;
+    width: 47%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 2vw;
+}
+#page2-left h5 {
+    width: 65%;
+    margin-bottom: 2vw;
+    font-size: 1.05vw;
+    font-weight: 300;
+    line-height: 1.4vw;
+}
+#page2-left p {
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+#page2-right {
+    height: 100%;
+    width: 50%;
+    /* background-color:#34e; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 10px solid #333;
+}
+.right-elem {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 7vw;
+    border-bottom: 2px solid #333;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    position: relative;
+    /* background-color: red; */
+}
+.right-elem:nth-last-child(1) {
+    border-bottom: none;
+}
+.right-elem h5 {
+    font-weight: 400;
+    font-size: 0.75vw;
+    color: #858282;
+}
+.arrow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: #fff; */
+    height: 100%;
+    width: 5.5vw;
+}
+.right-elem h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #dfdcdc;
+    text-transform: capitalize;
+}
+.right-elem img {
+    height: 7vw;
+    width: 7vw;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    border-radius: 50%;
+    scale: 0;
+}
+/* Page2 Ends */
+
+/* Page3 Starts */
+#page3 {
+    height: 100vh;
+    width: 95vw;
+    position: relative;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -6vw;
+    margin-right: -6vw;
+    z-index: 0;
+}
+.center-play {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1; */
+}
+#icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #111;
+    background-color: #fff;
+    font-size: 1.8vw;
+}
+#page3 h5 {
+    background-color: #fff;
+    color: #111;
+    padding: 0.5vw 0.8vw;
+    border-radius: 1.2vw;
+    margin-top: 0.6vw;
+    font-size: 0.76vw;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all ease 0.6s;
+    transform: translateY(16%);
+}
+#page3:hover h5{
+   opacity: 1;
+}
+#page3 video{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   object-fit: cover;
+   transform: scaleX(0.5) scaleY(0);
+   border-radius: 30px;
+   opacity: 0;
+   z-index: 99;
+}
+ /* page3 Ends */
+
+ /* Page4 starts */
+#page4{
    height: 100vh;
    width: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin-top: 3vw;
-   padding-bottom: 8vw;
-   border-top: 1px solid #333;
-   /* background-color: red; */
+}
+.sec1{
    position: relative;
+   height: 100Vh;
+   width: 40%;
+   background-color: paleturquoise;
 }
-#page2-left{
-   height: 100%;
-   width: 47%;
-   /* background-color: #333; */
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
-   flex-direction: column;
-   padding: 3vw 2vw;
-}
-#page2-left h5{
-   width: 65%;
-   margin-bottom: 2vw;
-   font-size: 1.05vw;
-   font-weight: 300;
-   line-height: 1.4vw;
-}
-#page2-left p{
-   font-size: 0.9vw;
-   font-weight: 300;
-}
-#page2-right{
-   height: 100%;
+.sec2{
+   position: relative;
+   height: 100Vh;
    width: 50%;
-   /* background-color:#34e; */
-   display:flex;
-   align-items: flex-start;
-   justify-content: space-between;
-   flex-direction: column;
-   position: relative;
-   z-index: 3;
-   margin-bottom: 10px solid #333;
-
-}
-.right-elem{
-   width: 100%;
-   height: 10vw;
-   display: flex;
-   align-items:flex-start;
-   justify-content:space-between;
-   gap: 7vw;
-   border-bottom: 2px solid #333;
-   padding-top: 1vw;
-   padding-bottom: 3vw;
-   position: relative;
-   /* background-color: red; */
-}
-.right-elem:nth-last-child(1){
-   border-bottom: none;
-}
-.right-elem h5{
-   font-weight: 400;
-   font-size: 0.75vw;
-   color: #858282;
-}
- .arrow{
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
-   position: relative;
-   /* background-color: #fff; */
-   height: 100%;
-   width: 5.5vw;
-} 
-.right-elem h2{
-   font-size: 1.5vw;
-   font-weight: 400;
-   color: #dfdcdc;
-   text-transform: capitalize;
-}
-.right-elem img{
-   height: 7vw;
-   width: 7vw;
-   object-fit: cover;
-   position: absolute;
-   opacity: 0;
-   border-radius: 50%;
-   scale: 0; 
+   background-color: crimson;
 }
