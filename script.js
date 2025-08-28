@@ -37,12 +37,23 @@ function Page3Animation() {
             borderRadius: 0,
         });
     });
-}
-
-function check() {
-    let a = document.querySelector(".center-play");
-    a.addEventListener("mouseenter", function (elem) {
-        console.log("Hyee");
+    video.addEventListener("click", function () {
+        video.pause();
+        gsap.to("video", {
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: 30,
+        });
     });
 }
-check();
+Page3Animation();
+
+
+
+// function check() {
+//     let a = document.querySelector(".center-play");
+//     a.addEventListener("mouseenter", function (elem) {
+//         console.log("Hyee");
+//     });
+// }
+// check();

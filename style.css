@@ -5,27 +5,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Geist", sans-serif;
-    background-color: #111111;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
-    padding: 0vh 4vw;
+    /* padding: 0vh 4vw; */
+    background-color: #111111;
     color: white;
+    scrollbar-width: none;
 }
 
 /* Navabar starts */
 #navbar {
     position: fixed;
-    height: 10vh;
-    width: 83vw;
+    height: 9vh;
+    width: 100%;
+    padding: 0vh 8vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    /* background-color: #bf6f6f; */
+    background-color: #111111;
 }
 #elem1 h2 {
     font-size: 1.6vw;
@@ -68,7 +70,6 @@ body {
     justify-content: center;
     flex-direction: column;
     padding-top: 5vw;
-    /* z-index: 0; */
     /* background-color: red; */
 }
 #page1 h1 {
@@ -165,6 +166,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0vh 8vw;
     margin-top: 3vw;
     padding-bottom: 8vw;
     border-top: 1px solid #333;
@@ -179,7 +181,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    padding: 3vw 2vw;
+    padding: 3vw 0vw;
 }
 #page2-left h5 {
     width: 65%;
@@ -254,7 +256,7 @@ body {
 /* Page3 Starts */
 #page3 {
     height: 100vh;
-    width: 95vw;
+    width: 100%;
     position: relative;
     background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
     background-size: cover;
@@ -262,8 +264,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: -6vw;
-    margin-right: -6vw;
     z-index: 0;
 }
 .center-play {
@@ -297,38 +297,89 @@ body {
     transition: all ease 0.6s;
     transform: translateY(16%);
 }
-#page3:hover h5{
-   opacity: 1;
+#page3:hover h5 {
+    opacity: 1;
 }
-#page3 video{
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   object-fit: cover;
-   transform: scaleX(0.5) scaleY(0);
-   border-radius: 30px;
-   opacity: 0;
-   z-index: 99;
+#page3 video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.5) scaleY(0);
+    border-radius: 30px;
+    opacity: 0;
+    z-index: 99;
 }
- /* page3 Ends */
+/* page3 Ends */
 
- /* Page4 starts */
-#page4{
-   height: 100vh;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+/* Page4 starts */
+#page4 {
+    background-color: rgb(251, 251, 251);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: #000;
 }
-.sec1{
-   position: relative;
-   height: 100Vh;
-   width: 40%;
-   background-color: paleturquoise;
+#left {
+    /* background-color: royalblue; */
+    width: 45%;
+    height: 100vh;
+    padding: 0vw 10vw;
+    padding-top: 16vh;  
+    font-size: 2vw;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 3.5vw;
 }
-.sec2{
-   position: relative;
-   height: 100Vh;
-   width: 50%;
-   background-color: crimson;
+#right {
+    width: 50%;
+    height: 100vh;
+    padding-right: 10vw;
+    padding-top: 16vh;
+    padding-bottom: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#sec1 p{
+    font-size: 1.4vw;
+    padding-top: 2vw;
+}
+#sec1 h5{
+   color: #afacac;
+   font-weight: 500;
+}
+#sec2 p{
+   font-size: 1.4vw;
+   padding-top: 2vw;
+}
+#sec2 h5{
+   color: #afacac;
+   font-weight: 500;
+}
+/* Page4 Ends */
+
+/* Page5 Starts */
+#page5 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec1 {
+    position: relative;
+    height: 100vh;
+    width: 40%;
+    background-color: paleturquoise;
+}
+.sec2 {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    background-color: antiquewhite;
 }
