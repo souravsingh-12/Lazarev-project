@@ -48,7 +48,19 @@ function Page3Animation() {
 }
 Page3Animation();
 
+let sections = document.querySelectorAll(".sec-right");
+sections.forEach(function (elem) {
+    console.log(elem.childNodes);
 
+    elem.addEventListener("mouseenter", function () {
+        elem.childNodes[3].style.opacity = 1;
+        elem.childNodes[3].play();
+    });
+    elem.addEventListener("mouseleave", function () {
+        elem.childNodes[3].style.opacity = 0;
+        elem.childNodes[3].load();
+    });
+});
 
 // function check() {
 //     let a = document.querySelector(".center-play");

@@ -306,7 +306,7 @@ body {
     position: absolute;
     object-fit: cover;
     transform: scaleX(0.5) scaleY(0);
-    border-radius: 30px;
+    border-radius: 40px;
     opacity: 0;
     z-index: 99;
 }
@@ -315,6 +315,7 @@ body {
 /* Page4 starts */
 #page4 {
     background-color: rgb(251, 251, 251);
+    /* background-color: whitesmoke; */
     height: 100vh;
     width: 100%;
     display: flex;
@@ -328,7 +329,7 @@ body {
     width: 45%;
     height: 100vh;
     padding: 0vw 10vw;
-    padding-top: 16vh;  
+    padding-top: 16vh;
     font-size: 2vw;
     font-weight: 700;
     text-transform: capitalize;
@@ -345,58 +346,77 @@ body {
     justify-content: space-between;
     flex-direction: column;
 }
-#sec1 p{
+#sec1 p {
     font-size: 1.4vw;
     padding-top: 2vw;
 }
-#sec1 h5{
-   color: #afacac;
-   font-weight: 500;
+#sec1 h5 {
+    color: #afacac;
+    font-weight: 500;
 }
-#sec2 p{
-   font-size: 1.4vw;
-   padding-top: 2vw;
+#sec2 p {
+    font-size: 1.4vw;
+    padding-top: 2vw;
 }
-#sec2 h5{
-   color: #afacac;
-   font-weight: 500;
+#sec2 h5 {
+    color: #afacac;
+    font-weight: 500;
 }
 /* Page4 Ends */
 
 /* Page5 Starts */
 #page5 {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(251, 251, 251);
+    color: #000;
+}
+.section {
+    height: 76vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 8vh 10vw;
 }
-.sec1 {
+.sec-left {
+    height: 100%;
+    width: 24%;
+    border-top: 2px solid #000;
+}
+.sec-left h2{
+   font-size: 2.2vw;
+   font-weight: 400;
+   padding-top: 1.7vw;
+}
+.sec-left p{
+   font-size: 1.1vw;
+   padding-top: 5vw;
+}
+.sec-left span{
+   font-size: 1.3vw;
+   padding: 1vw;
+}
+.sec-right {
+    height: 100%;
+    width: 70%;
     position: relative;
+    background-color: crimson;
+}
+.sec-right img {
     height: 100%;
     width: 100%;
-    background-color: rgb(26, 147, 147);justify-content: center;
-    display: flex;
-    align-items: center;
-
+    object-fit: cover;
 }
-.sec-left{
-   height: 100vh;
-   width: 35%;
-}
-.sec-right{
-   background-color: crimson;
-   height: 100vh;
-   width: 65%;
-}
-.sec-right img{
-   height: 65vh;
-   width: 55vw;
+.sec-right video{
+   height: 100%;
+   width: 100%;
+   position: absolute;
    object-fit: cover;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity ease 0.2s;
 }
-/* .sec2 {
-    position: relative;
-    height: 100vh;
-    width: 65%;
-    background-color: crimson;
-} */
+
