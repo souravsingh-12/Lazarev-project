@@ -33,8 +33,14 @@ body {
     font-size: 1.6vw;
     font-weight: 900;
 }
-#navbar h4 {
+#elem2 h4 {
     font-size: 0.9vw;
+    cursor: pointer;
+}
+#elem2 h4:hover{
+   /* background-color: #666; */
+   color:#0da34e;
+   scale: 1.1;
 }
 #elem2 {
     display: flex;
@@ -55,6 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1.2vw;
+    cursor: pointer;
 }
 #navbar button i {
     background-color: #0da34e;
@@ -365,7 +372,7 @@ body {
     background-color: rgb(251, 251, 251);
     color: #000;
 }
-.section {
+.section1 {
     height: 76vh;
     width: 100%;
     display: flex;
@@ -390,6 +397,17 @@ body {
 .sec-left span {
     font-size: 1.3vw;
     padding: 1vw;
+}
+.sec-left > button{
+   background-color: #4F5BFF;
+   height: 3.5vw;
+   width: 16.5vw;
+   border-radius: 50px;
+   color: whitesmoke;
+   border: none;
+   font-weight: 550;
+   font-size: 0.85vw;
+   margin-top: 7vw;
 }
 .sec-right {
     height: 100%;
@@ -438,4 +456,95 @@ body {
     left: 0;
     opacity: 0;
     transition: opacity ease 0.2s;
+}
+#section2{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 34vw;
+   padding-right: 10vw;
+   padding-top: 5vw;
+   gap: 5vw;
+   position: relative;
+}
+#sec-left{
+   height: 100vh;
+   width: 100%;
+   border-top: 2px solid #d4d2d2;
+   padding-top: 1vw;
+   position: relative;
+}
+#sec-left h2{
+   font-size: 2.2vw;
+   font-weight: 400;
+}
+#sec-left span{
+   font-size: 1.4vw;
+   padding: 1.3vw;
+}
+#sec-left p{
+   padding-top: 5vw;
+   font-weight: 300;
+   font-size: 1.1vw;
+}
+#sec-left img{
+   position: relative;
+   height: 45%;
+   width: 100%;
+   padding-top: 3vw;
+   object-fit: cover;
+}
+#sec-left video{
+   height: 40%;
+   width: 100%;
+   object-fit: cover;
+   position: absolute;
+   bottom: 25%;
+   left: 0;
+   /* opacity: 0; */
+}
+#sec-right{
+   height: 100vh;
+   width: 100%;
+   border-top: 2px solid #d4d2d2;
+   padding-top: 1vw;
+   position: relative;
+}
+#sec-right h2{
+   font-size: 2.2vw;
+   font-weight: 400;
+}
+#sec-right span{
+   font-size: 1.4vw;
+   padding: 1.3vw;
+}
+#sec-right p{
+   padding-top: 5vw;
+   font-weight: 300;
+   font-size: 1.1vw;
+}
+#sec-right img{
+   position: relative;
+   height: 45%;
+   width: 100%;
+   padding-top: 3vw;
+   object-fit: cover;
+}
+#sec-right video{
+   height: 40%;
+   width: 100%;
+   object-fit: cover;
+   position: absolute;
+   bottom: 25%;
+   left: 0;
+   /* opacity: 0; */
+}
+/* Page5 Ends */
+
+/* Page6 Starts */
+#page6{
+   height: 100vh;
+   width: 100%;
 }
