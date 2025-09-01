@@ -52,6 +52,7 @@ function Page5Animation() {
     let section1 = document.querySelectorAll(".sec-right");
     let section2Left = document.querySelector("#sec-left");
     let section2Right = document.querySelector("#sec-right");
+    let video = document.querySelector("#section2 video");
 
     section1.forEach(function (elem) {
         elem.addEventListener("mouseenter", function () {
@@ -86,19 +87,29 @@ function Page5Animation() {
         });
 
         section2Left.addEventListener("mouseenter", function () {
-            
+            video.play();
+            gsap.to("video", {
+                opacity: 1,
+               //  transform: "scaleX(1) scaleY(2)",
+            });
+            // console.log(elem.childNodes[3].play());
         });
 
-        section2Left.addEventListener("mouseenter", function () {
-            console.log("hello");
+        section2Left.addEventListener("mouseleave", function () {
+            video.load();
+            gsap.to("video", {
+                opacity: 0,
+                // transform: "scaleX(0) ",
+            });
+            // console.log(elem.childNodes[3].play());
+        });
+
+        section2Right.addEventListener("mouseenter", function () {
+            video.play();
         });
     });
 }
 Page5Animation();
-
-
-
-
 
 // function check() {
 //     let a = document.querySelector(".center-play");
