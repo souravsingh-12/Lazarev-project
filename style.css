@@ -11,10 +11,10 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* padding: 0vh 4vw; */
     background-color: #111111;
     color: white;
     scrollbar-width: none;
+    cursor: default;
 }
 
 /* Navabar starts */
@@ -72,7 +72,7 @@ body {
 }
 /* Navabr ends */
 
-/* Page1 Starts */
+/* Page-1 Starts */
 #page1 {
     height: 100vh;
     width: 100%;
@@ -81,7 +81,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding-top: 5vw;
-    /* background-color: red; */
+    cursor: default;
 }
 #page1 h1 {
     font-size: 8.5vw;
@@ -168,9 +168,9 @@ body {
     background: linear-gradient(to right, transparent, #111);
 }
 
-/* Page1 ends */
+/* Page-1 ends */
 
-/* Page2 starts */
+/* Page-2 starts */
 #page2 {
     height: 100vh;
     width: 100%;
@@ -182,6 +182,7 @@ body {
     padding-bottom: 8vw;
     border-top: 1px solid #333;
     position: relative;
+    cursor: default;
 }
 #page2-left {
     height: 100%;
@@ -211,6 +212,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
 }
 .right-elem {
     width: 100%;
@@ -255,9 +257,9 @@ body {
     border-radius: 50%;
     scale: 0;
 }
-/* Page2 Ends */
+/* Page-2 Ends */
 
-/* Page3 Starts */
+/* Page-3 Starts */
 #page3 {
     height: 100vh;
     width: 100%;
@@ -278,6 +280,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     /* z-index: 1; */
 }
 #icon i {
@@ -314,9 +317,9 @@ body {
     opacity: 0;
     z-index: 99;
 }
-/* page3 Ends */
+/* page-3 Ends */
 
-/* Page4 starts */
+/* Page-4 starts */
 #page4 {
     background-color: rgb(251, 251, 251);
     /* background-color: whitesmoke; */
@@ -366,9 +369,9 @@ body {
     color: #afacac;
     font-weight: 500;
 }
-/* Page4 Ends */
+/* Page-4 Ends */
 
-/* Page5 Starts */
+/* Page-5 Starts */
 #page5 {
     min-height: 100vh;
     width: 100%;
@@ -418,6 +421,8 @@ body {
     height: 100%;
     width: 70%;
     position: relative;
+    cursor: pointer;
+
 }
 .hover-btn {
     background-color: #4f5bff;
@@ -482,6 +487,7 @@ body {
     border-top: 2px solid #d4d2d2;
     padding-top: 1vw;
     position: relative;
+    cursor: pointer;
     /* background-color: royalblue; */
 }
 #sec-left h2 {
@@ -521,6 +527,7 @@ body {
     border-top: 2px solid #d4d2d2;
     padding-top: 1vw;
     position: relative;
+    cursor: pointer;
     /* background-color: crimson; */
 }
 #sec-right h2 {
@@ -552,9 +559,9 @@ body {
     left: 0;
     opacity: 0;
 }
-/* Page5 Ends */
+/* Page-5 Ends */
 
-/* Page6 Starts */
+/* Page-6 Starts */
 #page6 {
     min-height: 100vh;
     width: 100%;
@@ -595,6 +602,7 @@ body {
     color: #fff;
     position: sticky;
     top: 12%;
+    cursor: pointer;
 }
 #page6 button  i {
     font-size: 1.2vw;
@@ -725,9 +733,9 @@ summary::marker {
 summary:hover {
     cursor: pointer;
 }
-/* Page6 Ends */
+/* Page-6 Ends */
 
-/* Page7 Starts */
+/* Page-7 Starts */
 #page7 {
     min-height: 100vh;
     width: 100vw;
@@ -737,7 +745,6 @@ summary:hover {
     padding: 10vh 10vw;
 }
 #page7>h2{
-   /* background-color: crimson; */
    font-size: 5.5vw;
    color: #111;
    padding-left: 21vw;
@@ -792,6 +799,10 @@ summary:hover {
 #page7-bottom{
    width: 100%;
    height: 44vh;
-   /* background-color: crimson; */
+   background-color: crimson;
    border-top: 1px solid #dadada;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
 }
+/* Page-7 Ends */
