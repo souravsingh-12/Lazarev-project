@@ -51,10 +51,10 @@ body {
     text-transform: uppercase;
 }
 #navbar button {
-    height: 6vh;
+    height: 6.5vh;
     width: 10vw;
-    background-color: #0da34e;
-    border-radius: 4vw;
+    background-color: #0da64e;
+    border-radius: 1.5vw;
     border: none;
     color: white;
     font-weight: 700;
@@ -64,6 +64,7 @@ body {
     justify-content: center;
     gap: 1.2vw;
     cursor: pointer;
+    padding-left: 1vw;
 }
 #navbar button i {
     background-color: #0da34e;
@@ -338,7 +339,7 @@ body {
     text-transform: capitalize;
     line-height: 3.5vw;
 }
-#right {
+#page4 #right {
     width: 50%;
     height: 100vh;
     padding-right: 10vw;
@@ -595,7 +596,7 @@ body {
     position: sticky;
     top: 12%;
 }
-#page6 button > i {
+#page6 button  i {
     font-size: 1.2vw;
     padding-left: 1.2vw;
     font-weight: 500;
@@ -728,6 +729,69 @@ summary:hover {
 
 /* Page7 Starts */
 #page7 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    background-color: whitesmoke;
+    color: #111;
+    position: relative;
+    padding: 10vh 10vw;
+}
+#page7>h2{
+   /* background-color: crimson; */
+   font-size: 5.5vw;
+   color: #111;
+   padding-left: 21vw;
+   padding-right: 10vw;
+   padding-top: 3vw;
+   padding-bottom: 6vw;
+   border-bottom: 1px solid #e0dcdc;
+   line-height: 6vw;
+   font-weight: 750;
+   letter-spacing: -1px;
+}
+#page7-content{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding-top: 9vh;
+   padding-bottom: 4vh;
+}
+#blue-btn{
+   height: 100%;
+   width: 25%;
+}
+#blue-btn button{
+   height: 8vh;
+   width: 16vw;
+   background-color: #4F5BFF;
+   color: #fff;
+   border-radius: 50px;
+   padding-left: 1vw;
+   border: none;
+   font-size: 0.9vw;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+#blue-btn span{
+   padding-left: 1.3vw;
+   font-size: 1.1vw;
+}
+#page7 #right{
+   width: 75%;
+   padding-right: 12vw;
+   padding-left: 1vw;
+}
+#right p{
+   font-size: 1.5vw;
+   padding-right: 4vw;
+   margin-bottom: 12vh;
+   letter-spacing: -0.5px;
+}
+#page7-bottom{
+   width: 100%;
+   height: 44vh;
+   /* background-color: crimson; */
+   border-top: 1px solid #dadada;
 }
