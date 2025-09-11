@@ -33,6 +33,12 @@ body {
     font-size: 1.6vw;
     font-weight: 900;
 }
+#dropdown{
+   display: none;
+}
+#elem2 :first-child > h4{
+   color: blue;
+}
 #elem2 h4 {
     font-size: 0.9vw;
     cursor: pointer;
@@ -422,7 +428,6 @@ body {
     width: 70%;
     position: relative;
     cursor: pointer;
-
 }
 .hover-btn {
     background-color: #4f5bff;
@@ -604,7 +609,7 @@ body {
     top: 12%;
     cursor: pointer;
 }
-#page6 button  i {
+#page6 button i {
     font-size: 1.2vw;
     padding-left: 1.2vw;
     font-weight: 500;
@@ -744,66 +749,66 @@ summary:hover {
     position: relative;
     padding: 10vh 10vw;
 }
-#page7>h2{
-   font-size: 5.5vw;
-   color: #111;
-   padding-left: 21vw;
-   padding-right: 10vw;
-   padding-top: 3vw;
-   padding-bottom: 6vw;
-   border-bottom: 1px solid #e0dcdc;
-   line-height: 6vw;
-   font-weight: 750;
-   letter-spacing: -1px;
+#page7 > h2 {
+    font-size: 5.5vw;
+    color: #111;
+    padding-left: 21vw;
+    padding-right: 10vw;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+    border-bottom: 1px solid #e0dcdc;
+    line-height: 6vw;
+    font-weight: 750;
+    letter-spacing: -1px;
 }
-#page7-content{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
-   padding-top: 9vh;
-   padding-bottom: 4vh;
+#page7-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 9vh;
+    padding-bottom: 4vh;
 }
-#blue-btn{
-   height: 100%;
-   width: 25%;
+#blue-btn {
+    height: 100%;
+    width: 25%;
 }
-#blue-btn button{
-   height: 8vh;
-   width: 16vw;
-   background-color: #4F5BFF;
-   color: #fff;
-   border-radius: 50px;
-   padding-left: 1vw;
-   border: none;
-   font-size: 0.9vw;
-   text-transform: uppercase;
-   font-weight: 500;
+#blue-btn button {
+    height: 8vh;
+    width: 16vw;
+    background-color: #4f5bff;
+    color: #fff;
+    border-radius: 50px;
+    padding-left: 1vw;
+    border: none;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-weight: 500;
 }
-#blue-btn span{
-   padding-left: 1.3vw;
-   font-size: 1.1vw;
+#blue-btn span {
+    padding-left: 1.3vw;
+    font-size: 1.1vw;
 }
-#page7 #right{
-   width: 75%;
-   padding-right: 12vw;
-   padding-left: 1vw;
+#page7 #right {
+    width: 75%;
+    padding-right: 12vw;
+    padding-left: 1vw;
 }
-#right p{
-   font-size: 1.5vw;
-   padding-right: 4vw;
-   margin-bottom: 12vh;
-   letter-spacing: -0.5px;
+#right p {
+    font-size: 1.5vw;
+    padding-right: 4vw;
+    margin-bottom: 12vh;
+    letter-spacing: -0.5px;
 }
-#page7-bottom{
-   width: 100%;
-   height: 44vh;
-   /* background-color: crimson; */
-   border-top: 1px solid #dadada;
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
+#page7-bottom {
+    width: 100%;
+    height: 44vh;
+    /* background-color: crimson; */
+    border-top: 1px solid #dadada;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 #btm6-part1 {
     border-right: 1px solid #dadada;
@@ -811,46 +816,38 @@ summary:hover {
     /* background-color: red; */
     height: 100%;
 }
-
 #btm6-part2 {
     border-right: 1px solid #dadada;
     width: 28%;
     /* background-color: red; */
     height: 100%;
 }
-
 #btm6-part3 {
     border-right: 1px solid #dadada;
     width: 15%;
     /* background-color: red; */
     height: 100%;
 }
-
 #btm6-part4 {
     border-right: 1px solid #dadada;
     width: 15%;
     /* background-color: red; */
     height: 100%;
 }
-
 #btm6-part5 {
-
     width: 15%;
     /* background-color: red; */
     height: 100%;
 }
-
 .btm6-parts {
     padding: 3vh 0.6vw;
 }
-
 .btm6-parts h5 {
     color: #000;
     font-weight: 500;
     font-size: 0.9vw;
     margin-bottom: 4vh;
 }
-
 .btm6-parts h4 {
     background-color: #111;
     width: 75%;
@@ -861,9 +858,7 @@ summary:hover {
     display: flex;
     align-items: center;
     font-weight: 500;
-
 }
-
 .btm6-parts h4 span {
     display: flex;
     align-items: center;
@@ -875,26 +870,27 @@ summary:hover {
     border-radius: 50%;
     margin-right: 1vw;
 }
-#btm6-part2 h4:nth-child(2){
+#btm6-part2 h4:nth-child(2) {
     transform: translateX(0);
 }
-#btm6-part2 h4:nth-child(3){
+#btm6-part2 h4:nth-child(3) {
     transform: translateX(10%);
 }
-#btm6-part2 h4:nth-child(4){
+#btm6-part2 h4:nth-child(4) {
     transform: translateX(20%);
 }
-#btm6-part2 h4:nth-child(5){
+#btm6-part2 h4:nth-child(5) {
     transform: translateX(30%);
 }
-#btm6-part2 h4:nth-child(6){
+#btm6-part2 h4:nth-child(6) {
     transform: translateX(40%);
 }
-#btm6-part2 h4:nth-child(7){
+#btm6-part2 h4:nth-child(7) {
     transform: translateX(50%);
 }
 /* Page-7 Ends */
 
+/* Page-8 Starts */
 #page8 {
     height: 100vh;
     background-color: #111;
