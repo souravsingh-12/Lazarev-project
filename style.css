@@ -11,16 +11,16 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #111111;
     color: white;
     scrollbar-width: none;
     cursor: default;
+    background-color: #111111;
 }
 
 /* Navabar starts */
 #navbar {
     position: fixed;
-    height: 9vh;
+    height: 9%;
     width: 100%;
     padding: 0vh 10vw;
     display: flex;
@@ -28,26 +28,11 @@ body {
     justify-content: space-between;
     z-index: 10;
     background-color: #111111;
+    /* border-bottom: 1px solid #fff; */
 }
 #elem1 h2 {
     font-size: 1.6vw;
     font-weight: 900;
-}
-#dropdown{
-   display: none;
-}
-#elem2 :first-child > h4{
-   color: blue;
-}
-#elem2 h4 {
-    font-size: 0.9vw;
-    cursor: pointer;
-}
-#elem2 h4:hover {
-    /* background-color: #666; */
-    color: #0da34e;
-    scale: 1.1;
-    transition: all ease 0.2s;
 }
 #elem2 {
     display: flex;
@@ -55,6 +40,54 @@ body {
     justify-content: space-around;
     gap: 3vw;
     text-transform: uppercase;
+}
+#elem2 h4 {
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+#elem2 h4:hover {
+    color: #0da34e;
+    transition: all ease 0.2s;
+}
+#dropdown-list > h4 {
+    display: block;
+    position: relative;
+    padding: 0.8vw 1vw;
+    border-radius: 50px;
+}
+#dropdown-list:hover > h4 {
+    background-color: #333;
+}
+#dropdown-container {
+    height: fit-content;
+    width: 110%;
+    padding: 0.6vw 1.5vw;
+    margin-top: 2vh;
+    margin-left: -1.3vw;
+    color: #000;
+    background-color: #fff;
+    border-radius: 12px;
+    position: absolute;
+    text-transform: capitalize;
+    opacity: 0;
+    display: none;
+}
+#dropdown-list h4:hover #dropdown-container {
+    display: block;
+    opacity: 1;
+    z-index: 99;
+}
+#dropdown-container h5:hover{
+   color: #0da34e;
+}
+.dropdown {
+    border-bottom: 1px solid #d7d5d5;
+    line-height: 1.7vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+}
+.dropdown h5 {
+    font-size: 0.8vw;
 }
 #navbar button {
     height: 6.5vh;
@@ -80,14 +113,17 @@ body {
 
 /* Page-1 Starts */
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    /* background-color: #111111; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-top: 5vw;
     cursor: default;
+    position: relative;
+
 }
 #page1 h1 {
     font-size: 8.5vw;
@@ -180,11 +216,13 @@ body {
 #page2 {
     height: 100vh;
     width: 100%;
+    /* background-color: #111111; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0vh 8vw;
-    margin-top: 3vw;
+    margin-top: 3vw auto;
+    padding-top: 3vw;
     padding-bottom: 8vw;
     border-top: 1px solid #333;
     position: relative;
@@ -570,6 +608,7 @@ body {
 #page6 {
     min-height: 100vh;
     width: 100%;
+    /* background-color: #111111; */
     padding: 10vh 10vw;
     position: relative;
 }

@@ -1,6 +1,68 @@
-function navbarAnimation(){
+function locomotiveAnimation() {
+    gsap.registerPlugin(ScrollTrigger);
 
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector("#main"),
+        smooth: true,
+
+        // for tablet smooth
+        tablet: { smooth: true },
+
+        // for mobile
+        smartphone: { smooth: true },
+    });
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy("#main", {
+        scrollTop(value) {
+            return arguments.length
+                ? locoScroll.scrollTo(value, 0, 0)
+                : locoScroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+            return {
+                top: 0,
+                left: 0,
+                width: window.innerWidth,
+                height: window.innerHeight,
+            };
+        },
+    });
+
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+    ScrollTrigger.refresh();
 }
+
+function loadingAnimation() {
+    let tl = gsap.timeline();
+
+    tl.from("#page1", {
+        opacity: 0,
+        duration: 0.2,
+        delay: 0.2,
+    });
+
+    tl.from("#page1", {
+        transform: "scaleX(0.7) scaleY(0.2) translateY(-80%)",
+        borderRadius: "200px",
+        duration: 0,
+        ease: "power3.out",
+    });
+
+    tl.from("nav", {
+        opacity: 0,
+        delay: -0.2,
+    });
+
+    tl.from("#page1 h1, #page1 p, #page1 div", {
+        opacity: 0,
+        duration: 0.3,
+        stagger: 0.2,
+    });
+}
+
+function navbarAnimation() {}
 
 function page2Animation() {
     let rightElems = document.querySelectorAll(".right-elem");
@@ -27,7 +89,6 @@ function page2Animation() {
         });
     });
 }
-page2Animation();
 
 function page3Animation() {
     let page3Center = document.querySelector(".center-play");
@@ -50,7 +111,6 @@ function page3Animation() {
         });
     });
 }
-page3Animation();
 
 function page5Animation() {
     let section1 = document.querySelectorAll(".sec-right");
@@ -94,7 +154,7 @@ function page5Animation() {
             video.play();
             gsap.to("video", {
                 opacity: 1,
-               //  transform: "scaleX(1) scaleY(2)",
+                //  transform: "scaleX(1) scaleY(2)",
             });
             // console.log(elem.childNodes[3].play());
         });
@@ -113,6 +173,15 @@ function page5Animation() {
         });
     });
 }
+
+//Function Call--->
+
+locomotiveAnimation();
+
+loadingAnimation();
+
+page3Animation();
+
+page2Animation();
+
 page5Animation();
-
-
